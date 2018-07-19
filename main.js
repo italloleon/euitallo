@@ -1,8 +1,8 @@
 $(document).ready(function () {
     setTimeout(function () {
         $(".textoprincipal").fadeToggle("slow",function () {
-            $(".textoprincipal").text("Aguade para um novidades");
+            $(".textoprincipal").text("Aguade para novidades");
         }).delay( 800 ).fadeIn("slow");
-    },6000)
+    },3000)
 
 });
