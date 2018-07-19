@@ -2,6 +2,8 @@ body, html{
     height: 100%;
     margin: 0;
     color: #FFFFFF;
+    font-family: 'Gaegu', cursive;
+
 }
 body{
     background: url("bg.svg") no-repeat;
@@ -11,4 +13,11 @@ body{
 .total1{
     height: 100%;
     width: 100%;
+}
+@media (max-width: 700px) {
+    body{
+        background: url("bgm.svg") no-repeat;
+        background-size: cover;
+
+    }
 }
