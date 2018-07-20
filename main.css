@@ -13,6 +13,7 @@ a:link{
 }
 .guia{
     bottom: 100px;
+    left: 50%
 }
 .total1{
     height: 100%;
@@ -29,15 +30,18 @@ a:link{
         width: 60px;
         bottom: 40px;
         z-index: 1;
+        left: 50%
     }
     .guia{
         bottom: 60px;
+        left: 50%
     }
 }
 @media (min-width: 701px) {
     .nuvemnext{
         width: 100px;
         bottom: 40px;
+        left: 50%
         z-index: 1;
     }
 }
