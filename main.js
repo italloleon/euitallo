@@ -72,8 +72,27 @@ $(document).ready(function () {
     $('.menu-item-my>a').click(function() {
         $doc.animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 700);
+        }, 700).delay(100);
+        $('.menu-list-section').fadeOut(350).removeClass("d-flex");
+        $('#line1').removeClass('gira1cima');
+        $('#line2').removeClass('d-none');
+        $('#line3').removeClass('gira2cima');
+        $('.menu-item-my').hide(1);
+        $('.menu-list-section').fadeOut(350).removeClass("d-flex");
+        count -= 1;
         return false;
     });
     // FIM DA ROLAGEM DOS ITENS
 });
+
+// SCROLL REVEAL
+window.sr = ScrollReveal();
+sr.reveal('.caixa-personagem',{
+    duration: 4000,
+    origin: 'left',
+    easing: 'linear'
+});
+sr.reveal('.eu-p1',{duration: 2800});
+sr.reveal('.eu-p2',{
+    duration: 6000,
+    easing: 'cubic-bezier(1, 0.2, 0.6, 0.1)'});

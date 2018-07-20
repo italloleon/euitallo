@@ -1,0 +1,130 @@
+/** Extra small devices (phones, 600px and down) *!*/
+@media only screen and (max-width: 600px) {
+    .total1{
+        height: 100%;
+        width: 100%;
+        background: url("bg.svg") no-repeat;
+        background-size: cover;
+        background-position: 40% 50% !important;
+    }
+    .nuvemnext{
+        width: 60px;
+        bottom: 40px;
+        z-index: 1;
+    }
+    .guia{
+        bottom: 60px;
+    }
+    .area2{
+         height: 100%;
+         background: url("bgm2.svg") no-repeat;
+        background-size: cover;
+        background-position: 20% 60% !important;
+     }
+    .area3{
+        height: 100%;
+        background: url("bgm3.svg") no-repeat;
+        background-size: cover;
+        background-position: bottom !important;
+    }
+    .area3-1{
+        height: 100%;
+        background: url("bgm3-1.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
+    }
+    .personagem{
+        width: 150px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .total1{
+        height: 100%;
+        width: 100%;
+        background: url("bg.svg") no-repeat;
+        background-size: cover;
+        background-position: center 70%;
+    }
+    .nuvemnext{
+        width: 100px;
+        bottom: 40px;
+        z-index: 1;
+    }
+    .area2{
+        height: 100%;
+        background: url("bgm2.svg") no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    .area3{
+        height: 100%;
+        background: url("bgm3.svg") no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    .area3-1{
+        height: 100%;
+        background: url("bgm3-1.svg") no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .eu-p1{
+        font-size: 120%;
+    }
+    .eu-p2{
+        font-size: 150%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .area2{
+        height: 100%;
+        background: url("bg2.svg") no-repeat;
+        background-size: cover;
+        background-position: 60%;
+    }
+    .area2-1{
+        height: 100%;
+        background: url("bg2-1.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .area3{
+        height: 100%;
+        background: url("bg3.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .area3-1{
+        height: 100%;
+        background: url("bg3-1.svg") no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+    .eu-p1{
+        font-size: 150%;
+    }
+    .eu-p2{
+        font-size: 150%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .eu-p1{
+        font-size: 150%;
+    }
+    .eu-p2{
+        font-size: 150%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
