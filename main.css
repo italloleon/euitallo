@@ -13,13 +13,17 @@ a:link{
 }
 .guia{
     bottom: 100px;
-    left: 50%
+}
+.nuvemzinha{
+    webkit-filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.2));
+    filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.2));
 }
 .total1{
     height: 100%;
     width: 100%;
     background: url("bg.svg") no-repeat;
     background-size: cover;
+    background-position: center 70%;
 }
 @media (max-width: 700px) {
     .total1{
@@ -30,18 +34,15 @@ a:link{
         width: 60px;
         bottom: 40px;
         z-index: 1;
-        left: 50%
     }
     .guia{
         bottom: 60px;
-        left: 50%
     }
 }
 @media (min-width: 701px) {
     .nuvemnext{
         width: 100px;
         bottom: 40px;
-        left: 50%
         z-index: 1;
     }
 }
