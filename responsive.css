@@ -76,6 +76,9 @@
     .eu-p2{
         font-size: 150%;
     }
+    .personagem{
+        width: 150px;
+    }
 }
 
 
@@ -83,15 +86,9 @@
 @media only screen and (min-width: 768px) {
     .area2{
         height: 100%;
-        background: url("bg2.svg") no-repeat;
+        background: url("bgeg2.svg") no-repeat;
         background-size: cover;
         background-position: 60%;
-    }
-    .area2-1{
-        height: 100%;
-        background: url("bg2-1.svg") no-repeat;
-        background-size: cover;
-        background-position: center;
     }
     .area3{
         height: 100%;
@@ -111,6 +108,9 @@
     .eu-p2{
         font-size: 150%;
     }
+    .personagem{
+        width: 300px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -120,6 +120,9 @@
     }
     .eu-p2{
         font-size: 150%;
+    }
+    .personagem{
+        width: 300px;
     }
 }
 

@@ -41,6 +41,15 @@ $(document).ready(function () {
     });
     // FIM DA ROLAGEM
 
+    $( window ).scroll(function () {
+        if($(document).scrollTop() > 1){
+            $('.nuvemnext').fadeOut("slow");
+        }
+        if($(document).scrollTop() == 0){
+            $('.nuvemnext').fadeIn("slow");
+        }
+    })
+
     // FUNÇÃO PARA MENU
     var count = 0;
     $('.bt-menu').click(function () {
@@ -69,9 +78,11 @@ $(document).ready(function () {
     // FIM DA FUNÇÃO MENU
 
     // ROLAGEM DOS ITENS DO MENU PARA SUAS SESSOES
-    $('.menu-item-my>a').click(function() {
+    $('.menu-item-my').click(function() {
+        var filho = $(this).children();
+        var link = filho.attr('href')
         $doc.animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
+            scrollTop: $( link ).offset().top
         }, 700).delay(100);
         $('.menu-list-section').fadeOut(350).removeClass("d-flex");
         $('#line1').removeClass('gira1cima');
@@ -83,16 +94,18 @@ $(document).ready(function () {
         return false;
     });
     // FIM DA ROLAGEM DOS ITENS
+
+    // SCROLL REVEAL
+    window.sr = ScrollReveal();
+    sr.reveal('.caixa-personagem',{
+        duration: 4000,
+        origin: 'left',
+        easing: 'linear'
+    });
+    sr.reveal('.eu-p1',{duration: 2800});
+    sr.reveal('.eu-p2',{
+        duration: 6000,
+        easing: 'cubic-bezier(1, 0.2, 0.6, 0.1)'});
+
 });
 
-// SCROLL REVEAL
-window.sr = ScrollReveal();
-sr.reveal('.caixa-personagem',{
-    duration: 4000,
-    origin: 'left',
-    easing: 'linear'
-});
-sr.reveal('.eu-p1',{duration: 2800});
-sr.reveal('.eu-p2',{
-    duration: 6000,
-    easing: 'cubic-bezier(1, 0.2, 0.6, 0.1)'});
