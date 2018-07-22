@@ -32,21 +32,46 @@ $(document).ready(function () {
     var $doc = $('html, body');
     // FIM DA ANIMAÇÃO
 
+    // ROLAGEM BALAO PARA O TOPO
+    $('.balaotop').click(function() {
+
+        $('#sacos').addClass('caindob').fadeOut("slow").delay(1010).removeClass('caindob');
+        setTimeout(function () {
+            $doc.animate({
+                scrollTop: $('#inicio').offset().top
+            }, 1000);
+            return false;
+
+        },300);
+
+    });
+
     // ROLAGEM SUAVE DA NUVEM PARA SEGUNDA SESSAO
     $('.nuvemnext').click(function() {
         $doc.animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 700);
+
         return false;
     });
     // FIM DA ROLAGEM
 
     $( window ).scroll(function () {
+        console.log($(document).scrollTop());
+        console.log($('#eu').offset().top);
         if($(document).scrollTop() > 1){
             $('.nuvemnext').fadeOut("slow");
         }
         if($(document).scrollTop() == 0){
             $('.nuvemnext').fadeIn("slow");
+        }
+        var topoeu = $('#eu').offset().top;
+        if($(document).scrollTop() > topoeu/2){
+            $('.balaotop').fadeIn("slow");
+            $('#sacos').fadeIn("slow");
+        }
+        else {
+            $('.balaotop').fadeOut("slow");
         }
     })
 

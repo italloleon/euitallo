@@ -5,6 +5,15 @@ body, html{
     font-family: 'Nunito', sans-serif;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
+.balaotop{
+    display: none;
+    cursor: pointer;
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+    webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+    filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.2));
+}
 a{
     color: black;
 }
@@ -15,7 +24,7 @@ a:link{
     bottom: 100px;
 }
 .nuvemzinha{
-    webkit-filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.2));
+    webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
     filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.2));
 }
 
@@ -68,6 +77,19 @@ a:link{
 
 #botaoprox{
      -webkit-animation: jump 2s infinite linear;
+}
+
+.caindob{
+    -moz-animation: caibalao 1s linear;
+    -webkit-animation: caibalao 1s linear;
+    animation: caibalao 1s linear;
+}
+
+
+@-webkit-keyframes caibalao{
+    0%{transform: translateY(0);-webkit-transform: translateY(0)}
+    50%{transform: translateY(5px);-webkit-transform: translateY(15px)}
+    100%{transform: translateY(10px);-webkit-transform: translateY(20px)}
 }
 
 @-webkit-keyframes jump{
