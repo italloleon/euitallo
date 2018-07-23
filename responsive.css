@@ -1,4 +1,5 @@
 /** Extra small devices (phones, 600px and down) *!*/
+
 @media only screen and (max-width: 600px) {
     .total1{
         height: 100%;
@@ -25,16 +26,37 @@
         height: 100%;
         background: url("bgm3.svg") no-repeat;
         background-size: cover;
-        background-position: bottom !important;
+        background-position: center !important;
     }
-    .area3-1{
-        height: 100%;
-        background: url("bgm3-1.svg") no-repeat;
+    .logoufc{
+        width: 120px;
+        webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
+    }
+    .logocc{
+        width: 120px;
+        webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
+    }
+    .area4{
+        height: 200%;
+        background: url("bgm4.svg") no-repeat;
         background-size: cover;
         background-position: center !important;
     }
+
     .personagem{
         width: 150px;
+    }
+    .balaotop{
+        display: none;
+        cursor: pointer;
+        width: 10%;
+        bottom: 20px;
+        right: 20px;
+        webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
+        z-index: 5000;
     }
 }
 
@@ -62,13 +84,23 @@
         height: 100%;
         background: url("bgm3.svg") no-repeat;
         background-size: cover;
-        background-position: top;
+        background-position: center;
     }
-    .area3-1{
-        height: 100%;
-        background: url("bgm3-1.svg") no-repeat;
+    .logoufc{
+        width: 240px;
+        webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
+    }
+    .logocc{
+        width: 240px;
+        webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
+    }
+    .area4{
+        height: 200%;
+        background: url("bgm4.svg") no-repeat;
         background-size: cover;
-        background-position: bottom;
+        background-position: center !important;
     }
     .eu-p1{
         font-size: 120%;
@@ -78,6 +110,16 @@
     }
     .personagem{
         width: 150px;
+    }
+    .balaotop{
+        display: none;
+        cursor: pointer;
+        width: 10%;
+        bottom: 20px;
+        right: 20px;
+        webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
+        z-index: 5000;
     }
 }
 
@@ -96,12 +138,23 @@
         background-size: cover;
         background-position: center;
     }
-    .area3-1{
-        height: 100%;
-        background: url("bg3-1.svg") no-repeat;
-        background-size: cover;
-        background-position: top;
+    .logoufc{
+        width: 240px;
+        webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
     }
+    .logocc{
+        width: 240px;
+        webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
+    }
+    .area4{
+        height: 200%;
+        background: url("bgm4.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
+    }
+
     .eu-p1{
         font-size: 150%;
     }
@@ -110,6 +163,16 @@
     }
     .personagem{
         width: 300px;
+    }
+    .balaotop{
+        display: none;
+        cursor: pointer;
+        width: 5%;
+        bottom: 20px;
+        right: 20px;
+        webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
+        z-index: 5000;
     }
 }
 
@@ -123,6 +186,16 @@
     }
     .personagem{
         width: 300px;
+    }
+    .balaotop{
+        display: none;
+        cursor: pointer;
+        width: 5%;
+        bottom: 20px;
+        right: 20px;
+        webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
+        z-index: 5000;
     }
 }
 

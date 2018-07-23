@@ -5,15 +5,7 @@ body, html{
     font-family: 'Nunito', sans-serif;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
-.balaotop{
-    display: none;
-    cursor: pointer;
-    width: 50px;
-    bottom: 20px;
-    right: 20px;
-    webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
-    filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.2));
-}
+
 a{
     color: black;
 }
@@ -98,17 +90,6 @@ a:link{
     50%{bottom: 40px;}
     75%{bottom: 35px;}
     100%{bottom: 40px;}
-}
-.loader-home{
-    width: 100%;
-    height: 100%;
-    background-color: #FFFFFF;
-    position: fixed;
-    z-index: 4000;
-}
-.loader{
-    width: 300px;
-    height: 180px;
 }
 
 

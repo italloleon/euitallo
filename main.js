@@ -127,6 +127,21 @@ $(document).ready(function () {
         origin: 'left',
         easing: 'linear'
     });
+    sr.reveal('.caixa-logo-ufc',{
+        duration: 4000,
+        origin: 'left',
+        easing: 'linear'
+    });
+    sr.reveal('.caixa-logo-cc',{
+        duration: 4000,
+        origin: 'right',
+        easing: 'linear'
+    });
+    sr.reveal('.texto-academico',{
+        duration: 4000,
+        origin: 'bottom',
+        easing: 'linear'
+    });
     sr.reveal('.eu-p1',{duration: 2800});
     sr.reveal('.eu-p2',{
         duration: 6000,
