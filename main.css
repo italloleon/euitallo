@@ -78,6 +78,10 @@ a:link{
 }
 
 
+.academico-p1{
+    font-size: 120%;
+}
+
 @-webkit-keyframes caibalao{
     0%{transform: translateY(0);-webkit-transform: translateY(0)}
     50%{transform: translateY(5px);-webkit-transform: translateY(15px)}

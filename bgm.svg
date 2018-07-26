@@ -1,1 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 480"><defs><style>.cls-1{fill:url(#Gradiente_sem_nome_172);}.cls-2{fill:#fff;}</style><linearGradient id="Gradiente_sem_nome_172" x1="160" x2="160" y2="480" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#63adda"/><stop offset="0.19" stop-color="#61a9d7"/><stop offset="0.37" stop-color="#5c9ed0"/><stop offset="0.55" stop-color="#538bc3"/><stop offset="0.73" stop-color="#4770b0"/><stop offset="0.9" stop-color="#374e99"/><stop offset="1" stop-color="#2c3689"/></linearGradient></defs><title>bgm</title><g id="Camada_2" data-name="Camada 2"><g id="main"><rect class="cls-1" width="320" height="480"/><path class="cls-2" d="M131,0c-3.86,34.79,3.81,48.85,12.22,55,13.64,10,29.42-.51,58.92,7.86,19.17,5.44,25.54,13.59,39.28,21C260.38,94,269.89,106.67,320,93V0Z"/><path class="cls-2" d="M0,429c55-16.32,81.71-15.48,96-11.6,12.71,3.45,11.66,8.25,29,13,21,5.74,48.59,5.87,70,2.32,22.44-3.72,21.89-8.78,42-10.67,23.74-2.23,44.43,3,53,5.1,25.18,6.31,25.38,16.12,30,20.42V480H0Z"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 320 480" style="enable-background:new 0 0 320 480;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+</style>
+<title>bgm</title>
+<g id="Camada_2">
+	<g id="main">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="160" y1="482" x2="160" y2="2" gradientTransform="matrix(1 0 0 -1 0 482)">
+			<stop  offset="0" style="stop-color:#63ADDA"/>
+			<stop  offset="0.19" style="stop-color:#61A9D7"/>
+			<stop  offset="0.37" style="stop-color:#5C9ED0"/>
+			<stop  offset="0.55" style="stop-color:#538BC3"/>
+			<stop  offset="0.73" style="stop-color:#4770B0"/>
+			<stop  offset="0.9" style="stop-color:#374E99"/>
+			<stop  offset="1" style="stop-color:#2C3689"/>
+		</linearGradient>
+		<rect class="st0" width="320" height="480"/>
+		<path class="st1" d="M131,0c-3.9,34.8,3.8,48.8,12.2,55c13.6,10,29.4-0.5,58.9,7.9c19.2,5.4,25.5,13.6,39.3,21
+			c19,10.1,28.5,22.8,78.6,9.1V0H131z"/>
+		<path class="st1" d="M0,429c55-16.3,81.7-15.5,96-11.6c12.7,3.5,11.7,8.3,29,13c21,5.7,48.6,5.9,70,2.3c22.4-3.7,21.9-8.8,42-10.7
+			c23.7-2.2,44.4,3,53,5.1c25.2,6.3,25.4,16.1,30,20.4V480H0V429z"/>
+	</g>
+</g>
+</svg>

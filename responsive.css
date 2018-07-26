@@ -44,6 +44,12 @@
         background-size: cover;
         background-position: center !important;
     }
+    .qual-p1{
+        font-size: 130%;
+    }
+    .bollcap{
+    width: 110px;
+}
 
     .personagem{
         width: 150px;
@@ -56,7 +62,7 @@
         right: 20px;
         webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
         filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
-        z-index: 5000;
+        z-index: 1500;
     }
 }
 
@@ -102,6 +108,12 @@
         background-size: cover;
         background-position: center !important;
     }
+    .qual-p1{
+        font-size: 130%;
+    }
+    .bollcap{
+    width: 110px;
+}
     .eu-p1{
         font-size: 120%;
     }
@@ -119,7 +131,7 @@
         right: 20px;
         webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
         filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
-        z-index: 5000;
+        z-index: 1500;
     }
 }
 
@@ -150,9 +162,12 @@
     }
     .area4{
         height: 200%;
-        background: url("bgm4.svg") no-repeat;
+        background: url("bg4.svg") no-repeat;
         background-size: cover;
         background-position: center !important;
+    }
+    .qual-p1{
+        font-size: 180%;
     }
 
     .eu-p1{
@@ -172,7 +187,10 @@
         right: 20px;
         webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
         filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
-        z-index: 5000;
+        z-index: 1500;
+    }
+    .bollcap{
+        width: 150px;
     }
 }
 
@@ -195,7 +213,10 @@
         right: 20px;
         webkit-filter: drop-shadow(6px 6px 5px rgba(0,0,0,0.2));
         filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
-        z-index: 5000;
+        z-index: 1500;
+    }
+    .bollcap{
+        width: 200px;
     }
 }
 
