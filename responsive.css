@@ -82,10 +82,12 @@
         z-index: 6001;
         top: 8%;
     }
-    .lista-modulos > li {
+    .lista-modulos > div {
+        list-style-type: circle !important;
         color: black;
-        margin: 15px 0 0 0;
-        font-size: 80%;
+        margin-top: 15px;
+        font-size: 70%;
+        display: inline !important;
     }
 }
 
@@ -168,15 +170,15 @@
         font-size: 90%;
     }
     .close-pop-compe{
-        font-size: 90%;
+        font-size: 70%;
         cursor: pointer;
         z-index: 6001;
         top: 8%;
     }
-    .lista-modulos > li {
+    .lista-modulos > div {
+        list-style-type: circle !important;
         color: black;
-        margin: 15px 0 0 0;
-        font-size: 80%;
+        display: inline !important;
     }
 }
 
@@ -267,10 +269,11 @@
         z-index: 6001;
         top: 8%;
     }
-    .lista-modulos > li {
+    .lista-modulos > div {
+        list-style-type: circle !important;
         color: black;
-        margin: 15px 0 0 0;
         font-size: 110%;
+    display: inline !important;
     }
 }
 
@@ -322,10 +325,11 @@
         z-index: 6001;
         top: 8%;
     }
-    .lista-modulos > li {
+    .lista-modulos > div {
+        list-style-type: circle !important;
         color: black;
-        margin: 15px 0 0 0;
         font-size: 110%;
+    display: inline !important;
     }
 }
 
