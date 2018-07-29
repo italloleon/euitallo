@@ -120,7 +120,7 @@ $(document).ready(function () {
     });
     // FIM DA ROLAGEM DOS ITENS
 
-    // SCROLL REVEAL
+    // SECTION SCROLL REVEAL
     window.sr = ScrollReveal();
     sr.reveal('.caixa-personagem',{
         duration: 4000,
@@ -145,7 +145,48 @@ $(document).ready(function () {
     sr.reveal('.eu-p1',{duration: 2800});
     sr.reveal('.eu-p2',{
         duration: 6000,
-        easing: 'cubic-bezier(1, 0.2, 0.6, 0.1)'});
+        easing: 'cubic-bezier(1, 0.2, 0.6, 0.1)'
+    });
+    sr.reveal('.ingleshouse',{
+        duration: 1000,
+        origin: 'bottom',
+        easing: 'linear'
+    });
+    sr.reveal('.excelhouse',{
+        duration: 1200,
+        origin: 'bottom',
+        easing: 'linear'
+    });
+    sr.reveal('.webhouse',{
+        duration: 1400,
+        origin: 'bottom',
+        easing: 'linear'
+    });
+    sr.reveal('.phphouse',{
+        duration: 1600,
+        origin: 'bottom',
+        easing: 'linear'
+    });
+    sr.reveal('.mysqlhouse',{
+        duration: 1800,
+        origin: 'bottom',
+        easing: 'linear'
+    });
+    sr.reveal('.wordphouse',{
+        duration: 2000,
+        origin: 'bottom',
+        easing: 'linear'
+    });
+    sr.reveal('.fronthouse',{
+        duration: 2200,
+        origin: 'bottom',
+        easing: 'linear'
+    });
+    sr.reveal('.angularhouse',{
+        duration: 2400,
+        origin: 'bottom',
+        easing: 'linear'
+    });
 
     var competencias = {
         'ingles':{'title': 'Curso de Inglês','local':'CLEC','texto':'2 anos e meio de curso para inglês intermediário', 'modulo': false},
