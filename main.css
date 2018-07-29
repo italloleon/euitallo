@@ -142,8 +142,6 @@ a:link{
 
 }
 
-
-
-.popup-compe-body{
-    overflow: auto;
+.noscroll{
+    overflow: hidden !important;
 }
