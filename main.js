@@ -79,6 +79,7 @@ $(document).ready(function () {
     var count = 0;
     $('.bt-menu').click(function () {
         if(count == 0){
+            $('body').addClass('noscroll');
             $('#line1').addClass('gira1cima');
             $('#line2').addClass('d-none');
             $('#line3').addClass('gira2cima');
@@ -89,6 +90,7 @@ $(document).ready(function () {
 
         }
         if(count == 1){
+            $('body').removeClass('noscroll');
             $('#line1').removeClass('gira1cima');
             $('#line2').removeClass('d-none');
             $('#line3').removeClass('gira2cima');
@@ -115,6 +117,7 @@ $(document).ready(function () {
         $('#line3').removeClass('gira2cima');
         $('.menu-item-my').hide(1);
         $('.menu-list-section').fadeOut(350).removeClass("d-flex");
+        $('body').removeClass('noscroll');
         count -= 1;
         return false;
     });
@@ -194,7 +197,7 @@ $(document).ready(function () {
         'web':{'title':'Curso de Design Web','local':'Alura','texto':'66 horas de Web Design', 'modulo': true, 'modulos':['Photoshop para Web I','Photoshop para Web II','Illustrator para Web','E-ail marketing Design','Facebook-imagens e anúncios']},
         'php':{'title':'Back-End PHP','local':'Alura','texto':'96 horas de PHP para Back-end', 'modulo': true, 'modulos':['Http, Web por baixo dos panos','PHP e MySQL I','PHP e MySQL II','MySQL I, Primeiras consultas','PHP I, orientação a objetos','PHP II, orientação a objetos','PHP com PDO I, persistência','PHP com PDO II, persistência']},
         'mysql':{'title':'Iniciando com SQL e MySQL','local':'Alura','texto':'29 horas de SQL e MySQL', 'modulo': true, 'modulos':['MySQL I','MySQL II','Modelagem de Banco de Dados Relacional']},
-        'wordpress':{'title':'Desenvolvedor Wordpress','local':'Alura','texto':'90 horas de Desenvolvedor Wordpress', 'modulo': true, 'modulos':['HTML5 CSS3 I','HTML5 CSS3 II','Wordpress I','Wordpress II','Wordpress-criação de um tema do zero','S4EO Wordpress']},
+        'wordpress':{'title':'Desenvolvedor Wordpress','local':'Alura','texto':'90 horas de Desenvolvedor Wordpress', 'modulo': true, 'modulos':['HTML5 CSS3 I','HTML5 CSS3 II','Wordpress I','Wordpress II','Wordpress-criação de um tema do zero','SEO Wordpress']},
         'front':{'title':'Desenvolvedor Front-end','local':'Alura','texto':'132 horas de desenvolvedor front-end', 'modulo': true, 'modulos':['HTML5 CSS3 I','HTML5 CSS3 II','JavaScript I','Jquery I','Jquery II','Web Design Responsivo','Projeto Final']},
         'angular':{'title':'Desenvolvedor Angular','local':'Alura','texto':'72 horas de desenvolvedor angular', 'modulo': true, 'modulos':['JavaScript Avançado I','JavaScript Avançado II','JavaScript Avançado III','WebPacks','Angular 6 I','Angular 6 II']},
         }
@@ -206,6 +209,8 @@ $(document).ready(function () {
         $('.texto-header-comp').text(listacompe[compaspas].title+" - "+listacompe[compaspas].local);
         $('.texto-modulos').text(listacompe[compaspas].texto);
         console.log($(this).attr('id'));
+        $('body').addClass('noscroll');
+
         if(listacompe[compaspas].modulo == true){
             console.log(listacompe[compaspas].modulos[0]);
 
@@ -213,7 +218,7 @@ $(document).ready(function () {
             console.log(tamanho);
             var cont = 0;
             while (cont < tamanho){
-                var elementolista = "<li>"+listacompe[compaspas].modulos[cont]+"</li>";
+                var elementolista = "<div class='col-4 col-sm-4 col-md-4 col-lg-4 mb-3 mx-0'>-"+listacompe[compaspas].modulos[cont]+"</div>";
                 $(elementolista).appendTo(elepai);
                 console.log(elepai);
                 cont++;
@@ -230,8 +235,10 @@ $(document).ready(function () {
         $('#pop-house').fadeOut(500);
         setTimeout(function () {
             $('#pop-house').removeClass('d-flex');
-            elepai.find('li').remove();
+            elepai.find('div').remove();
         },500.1);
+        $('body').removeClass('noscroll');
+
 
     });
 
