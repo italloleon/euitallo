@@ -147,36 +147,52 @@ $(document).ready(function () {
         duration: 6000,
         easing: 'cubic-bezier(1, 0.2, 0.6, 0.1)'});
 
-
-
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-                /*make an HTTP request using the attribute value as the file name:*/
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                        if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                        /*remove the attribute, and call this function once more:*/
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                /*exit the function:*/
-                return;
-            }
+    var competencias = {
+        'ingles':{'title': 'Curso de Inglês','local':'CLEC','texto':'2 anos e meio de curso para inglês intermediário', 'modulo': false},
+        'excel':{'title':'Curso de Excel','local':'SENAC','texto':'72 horas de Excel', 'modulo': true, 'modulos':['Excel Básico','Excel Avançado']},
+        'web':{'title':'Curso de Design Web','local':'Alura','texto':'66 horas de Web Design', 'modulo': true, 'modulos':['Photoshop para Web I','Photoshop para Web II','Illustrator para Web','E-ail marketing Design','Facebook-imagens e anúncios']},
+        'php':{'title':'Back-End PHP','local':'Alura','texto':'96 horas de PHP para Back-end', 'modulo': true, 'modulos':['Http, Web por baixo dos panos','PHP e MySQL I','PHP e MySQL II','MySQL I, Primeiras consultas','PHP I, orientação a objetos','PHP II, orientação a objetos','PHP com PDO I, persistência','PHP com PDO II, persistência']},
+        'mysql':{'title':'Iniciando com SQL e MySQL','local':'Alura','texto':'29 horas de SQL e MySQL', 'modulo': true, 'modulos':['MySQL I','MySQL II','Modelagem de Banco de Dados Relacional']},
+        'wordpress':{'title':'Desenvolvedor Wordpress','local':'Alura','texto':'90 horas de Desenvolvedor Wordpress', 'modulo': true, 'modulos':['HTML5 CSS3 I','HTML5 CSS3 II','Wordpress I','Wordpress II','Wordpress-criação de um tema do zero','S4EO Wordpress']},
+        'front':{'title':'Desenvolvedor Front-end','local':'Alura','texto':'132 horas de desenvolvedor front-end', 'modulo': true, 'modulos':['HTML5 CSS3 I','HTML5 CSS3 II','JavaScript I','Jquery I','Jquery II','Web Design Responsivo','Projeto Final']},
+        'angular':{'title':'Desenvolvedor Angular','local':'Alura','texto':'72 horas de desenvolvedor angular', 'modulo': true, 'modulos':['JavaScript Avançado I','JavaScript Avançado II','JavaScript Avançado III','WebPacks','Angular 6 I','Angular 6 II']},
         }
-    }
+    var listacompe = [competencias.ingles,competencias.excel,competencias.web,competencias.php,competencias.mysql,competencias.wordpress, competencias.front,competencias.angular];
 
-    includeHTML();
+    var elepai = $('.lista-modulos');
+    $('.bollcap').click(function () {
+        var compaspas = $(this).attr('id');
+        $('.texto-header-comp').text(listacompe[compaspas].title+" - "+listacompe[compaspas].local);
+        $('.texto-modulos').text(listacompe[compaspas].texto);
+        console.log($(this).attr('id'));
+        if(listacompe[compaspas].modulo == true){
+            console.log(listacompe[compaspas].modulos[0]);
+
+            var tamanho = listacompe[compaspas].modulos.length;
+            console.log(tamanho);
+            var cont = 0;
+            while (cont < tamanho){
+                var elementolista = "<li>"+listacompe[compaspas].modulos[cont]+"</li>";
+                $(elementolista).appendTo(elepai);
+                console.log(elepai);
+                cont++;
+
+            }
+
+
+
+        }
+        console.log('proximo');
+        $('#pop-house').fadeIn(500).addClass('d-flex').removeClass('d-none');
+    });
+    $('.close-pop-compe').click(function () {
+        $('#pop-house').fadeOut(500);
+        setTimeout(function () {
+            $('#pop-house').removeClass('d-flex');
+            elepai.find('li').remove();
+        },500.1);
+
+    });
+
 });
 

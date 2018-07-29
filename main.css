@@ -130,3 +130,27 @@ a:link{
 #line1, #line2, #line3{
     transition: all 0.3s linear;
 }
+
+#pop-house{
+    background-color: rgba(0,0,0,.6);
+    z-index: 6000;
+}
+
+
+.popup-compe-header{
+    background-color: #f2f2f2;
+
+}
+.close-pop-compe{
+    font-size: 120%;
+    cursor: pointer;
+    z-index: 6001;
+}
+
+.lista-modulos > li {
+    color: black;
+    margin: 15px 0 0 0;
+}
+.popup-compe-body{
+    overflow: auto;
+}
