@@ -190,6 +190,33 @@ $(document).ready(function () {
         origin: 'bottom',
         easing: 'linear'
     });
+    sr.reveal('.card-de-trabalho1',{
+        duration: 800+200,
+        origin: 'left',
+        distance: '20px',
+        easing: 'ease'
+    });
+    sr.reveal('.card-de-trabalho2',{
+        duration: 1000+200,
+        origin: 'left',
+        distance: '20px',
+        easing: 'ease'
+    });
+    sr.reveal('.card-de-trabalho3',{
+        duration: 1200+200,
+        origin: 'left',
+        distance: '20px',
+        easing: 'ease'
+    });
+    sr.reveal('.card-de-trabalho4',{
+        duration: 1400+200,
+        origin: 'left',
+        distance: '20px',
+        easing: 'ease'
+    });
+
+    // FINAL DO SCROLL REVEAL
+
 
     var competencias = {
         'ingles':{'title': 'Curso de Inglês','local':'CLEC','texto':'2 anos e meio de curso para inglês intermediário', 'modulo': false},

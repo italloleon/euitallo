@@ -39,11 +39,23 @@
         filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
     }
     .area4{
-        height: 200%;
         background: url("bgm4.svg") no-repeat;
         background-size: cover;
         background-position: center !important;
     }
+    .area5{
+
+        background: url("bgm5.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
+    }
+    .area6{
+        height: 100%;
+        background: url("bgm6.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
+    }
+
     .qual-p1{
         font-size: 130%;
     }
@@ -107,7 +119,7 @@
     }
     .area2{
         height: 100%;
-        background: url("bgm2.svg") no-repeat;
+        background: url("bg2.svg") no-repeat;
         background-size: cover;
         background-position: top;
     }
@@ -128,11 +140,23 @@
         filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
     }
     .area4{
-        height: 200%;
         background: url("bgm4.svg") no-repeat;
         background-size: cover;
         background-position: center !important;
     }
+    .area5{
+
+        background: url("bgm5.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
+    }
+    .area6{
+        height: 100%;
+        background: url("bgm6.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
+    }
+
     .qual-p1{
         font-size: 130%;
     }
@@ -187,7 +211,7 @@
 @media only screen and (min-width: 768px) {
     .area2{
         height: 100%;
-        background: url("bgeg2.svg") no-repeat;
+        background: url("bg2.svg") no-repeat;
         background-size: cover;
         background-position: 60%;
     }
@@ -208,8 +232,19 @@
         filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.15));
     }
     .area4{
-        height: 200%;
         background: url("bg4.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
+    }
+    .area5{
+
+        background: url("bg5.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
+    }
+    .area6{
+        height: 100%;
+        background: url("bg6.svg") no-repeat;
         background-size: cover;
         background-position: center !important;
     }
@@ -275,6 +310,10 @@
         font-size: 110%;
     display: inline !important;
     }
+    .caixa-logo-empresa{
+        border-right: 1px solid #dee2e6 ;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -330,6 +369,38 @@
         color: black;
         font-size: 110%;
     display: inline !important;
+    }
+    .caixa-logo-empresa{
+        border-right: 1px solid #dee2e6 ;
+    }
+    .area2{
+        height: 100%;
+        background: url("bgeg2.svg") no-repeat;
+        background-size: cover;
+        background-position: 60%;
+    }
+    .area3{
+        height: 100%;
+        background: url("bgeg3.svg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .area4{
+        background: url("bgeg4.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
+    }
+    .area5{
+
+        background: url("bgeg5.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
+    }
+    .area6{
+        height: 100%;
+        background: url("bgeg6.svg") no-repeat;
+        background-size: cover;
+        background-position: center !important;
     }
 }
 

@@ -145,3 +145,17 @@ a:link{
 .noscroll{
     overflow: hidden !important;
 }
+.card-prof{
+    width: 90%;
+    transition: all .3s;
+}
+.card-prof:hover{
+    filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.2));
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    transform: translateX(5px);
+    transition: all .3s;
+}
+.logo-empre{
+    width: 150px;
+}
